@@ -252,9 +252,9 @@ files:
     translation: '/%original_path%-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
-  # external/motorola/faceunlock
+  # external/motorola/faceunlock-res
   -
-    source:      '/external/motorola/faceunlock/res/res/values/custom_strings.xml'
+    source:      '/external/motorola/faceunlock-res/res/values/custom_strings.xml'
     translation: '/%original_path%-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 

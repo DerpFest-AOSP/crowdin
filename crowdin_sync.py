@@ -417,43 +417,49 @@ def upload_sources_crowdin(branch, config, crowdin_path):
     if config:
         print('\nUploading sources to Crowdin (custom config)')
         check_run([crowdin_path,
-                   f'--config={_DIR}/config/{config}',
-                   'upload', 'sources', f'--branch={branch}'])
+                   'upload', 'sources', f'--branch={branch}',
+                   '--plain',
+                   f'--config={_DIR}/config/{config}'])
     else:
         print('\nUploading sources to Crowdin')
         check_run([crowdin_path,
-                   f'--config={_DIR}/config/{branch}.yaml',
-                   'upload', 'sources', f'--branch={branch}'])
+                   'upload', 'sources', f'--branch={branch}',
+                   '--plain',
+                   f'--config={_DIR}/config/{branch}.yaml'])
 
 
 def upload_translations_crowdin(branch, config, crowdin_path):
     if config:
         print('\nUploading translations to Crowdin (custom config)')
         check_run([crowdin_path,
-                   f'--config={_DIR}/config/{config}',
                    'upload', 'translations', f'--branch={branch}',
                    '--no-import-duplicates', '--import-eq-suggestions',
-                   '--auto-approve-imported'])
+                   '--auto-approve-imported',
+                   '--plain',
+                   f'--config={_DIR}/config/{config}'])
     else:
         print('\nUploading translations to Crowdin')
         check_run([crowdin_path,
-                   f'--config={_DIR}/config/{branch}.yaml',
                    'upload', 'translations', f'--branch={branch}',
                    '--no-import-duplicates', '--import-eq-suggestions',
-                   '--auto-approve-imported'])
+                   '--auto-approve-imported',
+                   '--plain',
+                   f'--config={_DIR}/config/{branch}.yaml'])
 
 
 def download_crowdin(base_path, branch, xml, username, config, crowdin_path):
     if config:
         print('\nDownloading translations from Crowdin (custom config)')
         check_run([crowdin_path,
-                   f'--config={_DIR}/config/{config}',
-                   'download', '--branch=%s' % branch])
+                   'download', '--branch=%s' % branch,
+                   '--plain',
+                   f'--config={_DIR}/config/{config}'])
     else:
         print('\nDownloading translations from Crowdin')
         check_run([crowdin_path,
-                   f'--config={_DIR}/config/{branch}.yaml',
-                   'download', f'--branch={branch}'])
+                   'download', f'--branch={branch}',
+                   '--plain',
+                   f'--config={_DIR}/config/{branch}.yaml'])
 
     print('\nCreating a list of pushable translations')
     # Get all files that Crowdin pushed
@@ -463,8 +469,8 @@ def download_crowdin(base_path, branch, xml, username, config, crowdin_path):
     else:
         files = [f'{_DIR}/config/{branch}.yaml']
     for c in files:
-        cmd = [crowdin_path, f'--config={c}', 'list', 'project',
-               f'--branch={branch}']
+        cmd = [crowdin_path, 'list', 'project',
+               f'--branch={branch}', '--plain', f'--config={c}']
         comm, ret = run_subprocess(cmd)
         if ret != 0:
             sys.exit(ret)

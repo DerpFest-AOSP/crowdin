@@ -17,15 +17,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-api_key_env: CROWDIN_API_KEY
+api_token_env: CROWDIN_API_KEY
 base_path_env: CROWDIN_BASE_PATH
-project_identifier: pixelexperience
+project_id: 296617
 preserve_hierarchy: true
 
 files:
-# frameworks/base
+# frameworks/base/packages/SystemUI
   -
-    source:      '/frameworks/base/core/res/res/values/custom_strings.xml'
+    source:      '/frameworks/base/packages/SystemUI/res/values/custom_strings.xml'
     translation: '/%original_path%-%android_code%/%original_file_name%'
     languages_mapping: &anchor
       android_code:
@@ -239,18 +239,6 @@ files:
         cy: cy
         # Zulu
         zu: zu
-
-  # frameworks/base/packages/SettingsLib
-  -
-    source:      '/frameworks/base/packages/SettingsLib/res/values/custom_strings.xml'
-    translation: '/%original_path%-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
-
-  # frameworks/base/packages/SystemUI
-  -
-    source:      '/frameworks/base/packages/SystemUI/res/values/custom_strings.xml'
-    translation: '/%original_path%-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
 
   # packages/apps/FaceUnlockService
   -

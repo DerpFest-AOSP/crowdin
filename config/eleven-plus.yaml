@@ -17,9 +17,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-api_key_env: CROWDIN_API_KEY
+api_token_env: CROWDIN_API_KEY
 base_path_env: CROWDIN_BASE_PATH
-project_identifier: pixelexperience
+project_id: 296617
 preserve_hierarchy: true
 
 files:
@@ -243,6 +243,12 @@ files:
   # frameworks/base/packages/SystemUI
   -
     source:      '/frameworks/base/packages/SystemUI/res/values/customx_strings.xml'
+    translation: '/%original_path%-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
+
+  # frameworks/base/packages/SettingsLib
+  -
+    source:      '/frameworks/base/packages/SettingsLib/res/values/customx_strings.xml'
     translation: '/%original_path%-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 

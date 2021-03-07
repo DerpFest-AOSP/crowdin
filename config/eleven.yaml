@@ -26,7 +26,7 @@ files:
 # frameworks/base/packages/SystemUI
   -
     source:      '/frameworks/base/packages/SystemUI/res/values/custom_strings.xml'
-    translation: '/%original_path%-%android_code%/%original_file_name%'
+    translation: '/frameworks/base/packages/SystemUI/res/values-%android_code%/%original_file_name%'
     languages_mapping: &anchor
       android_code:
         # Afrikaans
@@ -243,49 +243,49 @@ files:
   # packages/apps/FaceUnlockService
   -
     source:      '/packages/apps/FaceUnlockService/app/src/main/res/values/custom_strings.xml'
-    translation: '/%original_path%-%android_code%/%original_file_name%'
+    translation: '/packages/apps/FaceUnlockService/app/src/main/res/values-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
   # packages/apps/ElmyraService
   -
     source:      '/packages/apps/ElmyraService/res/values/custom_strings.xml'
-    translation: '/%original_path%-%android_code%/%original_file_name%'
+    translation: '/packages/apps/ElmyraService/res/values-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
   # packages/apps/Settings
   -
     source:      '/packages/apps/Settings/res/values/custom_strings.xml'
-    translation: '/%original_path%-%android_code%/%original_file_name%'
+    translation: '/packages/apps/Settings/res/values-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
   # packages/apps/Settings - Plurals
   -
     source:      '/packages/apps/Settings/res/values/custom_plurals.xml'
-    translation: '/%original_path%-%android_code%/%original_file_name%'
+    translation: '/packages/apps/Settings/res/values-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
   # packages/apps/TouchGestures
   -
     source:      '/packages/apps/TouchGestures/res/values/custom_strings.xml'
-    translation: '/%original_path%-%android_code%/%original_file_name%'
+    translation: '/packages/apps/TouchGestures/res/values-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
   # packages/apps/Updates
   -
     source:      '/packages/apps/Updates/res/values/custom_strings.xml'
-    translation: '/%original_path%-%android_code%/%original_file_name%'
+    translation: '/packages/apps/Updates/res/values-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
   # packages/providers/DownloadProvider
   -
     source:      '/packages/providers/DownloadProvider/res/values/custom_strings.xml'
-    translation: '/%original_path%-%android_code%/%original_file_name%'
+    translation: '/packages/providers/DownloadProvider/res/values-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
   # packages/resources/devicesettings-custom
   -
     source:      '/packages/resources/devicesettings-custom/res/values/custom_strings.xml'
-    translation: '/%original_path%-%android_code%/%original_file_name%'
+    translation: '/packages/resources/devicesettings-custom/res/values-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
   

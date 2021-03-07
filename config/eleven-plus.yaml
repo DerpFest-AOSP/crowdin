@@ -26,7 +26,7 @@ files:
 # frameworks/base
   -
     source:      '/frameworks/base/core/res/res/values/customx_strings.xml'
-    translation: '/%original_path%-%android_code%/%original_file_name%'
+    translation: '/frameworks/base/core/res/res/values-%android_code%/%original_file_name%'
     languages_mapping: &anchor
       android_code:
         # Afrikaans
@@ -243,18 +243,15 @@ files:
   # frameworks/base/packages/SystemUI
   -
     source:      '/frameworks/base/packages/SystemUI/res/values/customx_strings.xml'
-    translation: '/%original_path%-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
+    translation: '/frameworks/base/packages/SystemUI/res/values-%android_code%/%original_file_name%'
 
   # frameworks/base/packages/SettingsLib
   -
     source:      '/frameworks/base/packages/SettingsLib/res/values/customx_strings.xml'
-    translation: '/%original_path%-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
+    translation: '/frameworks/base/packages/SettingsLib/res/values-%android_code%/%original_file_name%'
 
   # packages/apps/Settings
   -
     source:      '/packages/apps/Settings/res/values/customx_strings.xml'
-    translation: '/%original_path%-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
+    translation: '/packages/apps/Settings/res/values-%android_code%/%original_file_name%'
   

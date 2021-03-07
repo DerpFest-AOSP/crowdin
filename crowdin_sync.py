@@ -341,6 +341,7 @@ def submit_gerrit(branch, username, owner):
 
 
 def check_run(cmd):
+    print(cmd)
     p = subprocess.Popen(cmd, stdout=sys.stdout, stderr=sys.stderr)
     ret = p.wait()
     if ret != 0:
@@ -433,17 +434,16 @@ def upload_translations_crowdin(branch, config, crowdin_path):
         print('\nUploading translations to Crowdin (custom config)')
         check_run([crowdin_path,
                    'upload', 'translations', f'--branch={branch}',
-                   '--no-import-duplicates', '--import-eq-suggestions',
-                   '--auto-approve-imported',
+                   '--import-eq-suggestions',
                    '--plain',
                    f'--config={_DIR}/config/{config}'])
     else:
         print('\nUploading translations to Crowdin')
         check_run([crowdin_path,
                    'upload', 'translations', f'--branch={branch}',
-                   '--no-import-duplicates', '--import-eq-suggestions',
-                   '--auto-approve-imported',
+                   '--import-eq-suggestions',
                    '--plain',
+                   '--verbose',
                    f'--config={_DIR}/config/{branch}.yaml'])
 
 

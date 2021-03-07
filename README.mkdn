@@ -8,15 +8,11 @@ automatic commiting to Gerrit and pushing/downloading to/from Crowdin.
 
 Prerequisites
 -------------
-The Java variant of crowdin is required for this to work.
+crowdin-cli is required, check instructions at https://github.com/crowdin/crowdin-cli#installation
 
-    wget -qO - https://artifacts.crowdin.com/repo/GPG-KEY-crowdin | sudo apt-key add -
-    echo 'deb https://artifacts.crowdin.com/repo/deb/ /' | sudo tee /etc/apt/sources.list.d/crowdin.list > /dev/null
-    sudo apt-get update && sudo apt-get install crowdin
+Install requirements using:
 
-The following tools are also required to run the tool:
-
-    sudo apt-get install python3-git python3-yaml python3-lxml
+pip install -r requirements.txt
 
 Executing
 ---------

@@ -240,6 +240,12 @@ files:
         # Zulu
         zu: zu
 
+  # frameworks/base/packages/SettingsLib
+  -
+    source:      '/frameworks/base/packages/SettingsLib/res/values/custom_strings.xml'
+    translation: '/frameworks/base/packages/SettingsLib/res/values-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
+
   # packages/apps/FaceUnlockService
   -
     source:      '/packages/apps/FaceUnlockService/app/src/main/res/values/custom_strings.xml'

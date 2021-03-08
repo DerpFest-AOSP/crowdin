@@ -595,10 +595,10 @@ def main():
 
     if _COMMITS_CREATED:
         print('\nDone!')
-        sys.exit(0)
     else:
         print('\nNothing to commit')
-        sys.exit(2)
+
+    sys.exit(0)
 
 if __name__ == '__main__':
     main()

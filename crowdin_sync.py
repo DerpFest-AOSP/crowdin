@@ -341,7 +341,6 @@ def submit_gerrit(branch, username, owner):
 
 
 def check_run(cmd):
-    print(cmd)
     p = subprocess.Popen(cmd, stdout=sys.stdout, stderr=sys.stderr)
     ret = p.wait()
     if ret != 0:

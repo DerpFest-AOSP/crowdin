@@ -418,13 +418,11 @@ def upload_sources_crowdin(branch, config, crowdin_path):
         print('\nUploading sources to Crowdin (custom config)')
         check_run([crowdin_path,
                    'upload', 'sources', f'--branch={branch}',
-                   '--plain',
                    f'--config={_DIR}/config/{config}'])
     else:
         print('\nUploading sources to Crowdin')
         check_run([crowdin_path,
                    'upload', 'sources', f'--branch={branch}',
-                   '--plain',
                    f'--config={_DIR}/config/{branch}.yaml'])
 
 
@@ -434,14 +432,12 @@ def upload_translations_crowdin(branch, config, crowdin_path):
         check_run([crowdin_path,
                    'upload', 'translations', f'--branch={branch}',
                    '--import-eq-suggestions',
-                   '--plain',
                    f'--config={_DIR}/config/{config}'])
     else:
         print('\nUploading translations to Crowdin')
         check_run([crowdin_path,
                    'upload', 'translations', f'--branch={branch}',
                    '--import-eq-suggestions',
-                   '--plain',
                    '--verbose',
                    f'--config={_DIR}/config/{branch}.yaml'])
 
@@ -451,13 +447,11 @@ def download_crowdin(base_path, branch, xml, username, config, crowdin_path):
         print('\nDownloading translations from Crowdin (custom config)')
         check_run([crowdin_path,
                    'download', '--branch=%s' % branch,
-                   '--plain',
                    f'--config={_DIR}/config/{config}'])
     else:
         print('\nDownloading translations from Crowdin')
         check_run([crowdin_path,
                    'download', f'--branch={branch}',
-                   '--plain',
                    f'--config={_DIR}/config/{branch}.yaml'])
 
     print('\nCreating a list of pushable translations')
@@ -474,7 +468,7 @@ def download_crowdin(base_path, branch, xml, username, config, crowdin_path):
         if ret != 0:
             sys.exit(ret)
         for p in str(comm[0]).split("\n"):
-            paths.append(p.replace(f'/{branch}', ''))
+            paths.append(p.replace(f'{branch}/', ''))
 
     print('\nUploading translations to Gerrit')
     items = [x for x in xml.findall("//project")]

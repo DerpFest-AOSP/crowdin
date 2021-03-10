@@ -244,14 +244,17 @@ files:
   -
     source:      '/frameworks/base/packages/SystemUI/res/values/customx_strings.xml'
     translation: '/frameworks/base/packages/SystemUI/res/values-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
 
   # frameworks/base/packages/SettingsLib
   -
     source:      '/frameworks/base/packages/SettingsLib/res/values/customx_strings.xml'
     translation: '/frameworks/base/packages/SettingsLib/res/values-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
 
   # packages/apps/Settings
   -
     source:      '/packages/apps/Settings/res/values/customx_strings.xml'
     translation: '/packages/apps/Settings/res/values-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
   

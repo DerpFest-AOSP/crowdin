@@ -32,9 +32,11 @@ import shutil
 import subprocess
 import sys
 import yaml
+import pytz
 
 from lxml import etree
 from signal import signal, SIGINT
+from datetime import datetime
 
 # ################################# GLOBALS ################################## #
 
@@ -272,7 +274,9 @@ def push_as_commit(config_files, base_path, path, name, branch, username):
 
     # Create commit; if it fails, probably empty so skipping
     try:
-        repo.git.commit(m='Automatic translation import')
+        ts = datetime.now(pytz.timezone('Asia/Kolkata')).strftime('%Y %B %d, %I:%M %p')
+        cm = 'Automatic translation import | {}'.format(ts)
+        repo.git.commit(m=cm)
     except:
         print('Failed, probably empty: skipping', file=sys.stderr)
         return

@@ -257,4 +257,3 @@ files:
     source:      '/packages/apps/Settings/res/values/customx_strings.xml'
     translation: '/packages/apps/Settings/res/values-%android_code%/%original_file_name%'
     languages_mapping: *anchor
-  

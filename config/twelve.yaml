@@ -1,0 +1,286 @@
+#
+# Crowdin configuration file for PixelExperience
+#
+# Copyright (C) 2014-2016 The CyanogenMod Project
+# Copyright (C) 2017-2020 The LineageOS Project
+# Copyright (C) 2017-2020 The PixelExperience Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+api_token_env: CROWDIN_API_KEY
+base_path_env: CROWDIN_BASE_PATH
+project_id: 296617
+preserve_hierarchy: true
+
+files:
+# frameworks/base/packages/SystemUI
+  -
+    source:      '/frameworks/base/packages/SystemUI/res/values/custom_strings.xml'
+    translation: '/frameworks/base/packages/SystemUI/res/values-%android_code%/%original_file_name%'
+    languages_mapping: &anchor
+      android_code:
+        # Afrikaans
+        af: af
+        # Albanian
+        sq: sq
+        # Amharic
+        am: am
+        # Arabic
+        ar: ar
+        # Armenian
+        hy-AM: hy
+        # Arpitan
+        frp: frp
+        # Assamese
+        as: as
+        # Asturian
+        ast: ast-rES
+        # Azerbaijani
+        az: az
+        # Basque
+        eu: eu
+        # Belarusian
+        be: be
+        # Bengali
+        bn: bn
+        # Bosnian
+        bs: bs
+        # Breton
+        br-FR: br-rFR
+        # Bulgarian
+        bg: bg
+        # Burmese
+        my: my
+        # Catalan
+        ca: ca
+        # Chinese Simplified
+        zh-CN: zh-rCN
+        # Chinese Traditional
+        zh-TW: zh-rTW
+        # Chinese Traditional, Hong Kong
+        zh-HK: zh-rHK
+        # Croatian
+        hr: hr
+        # Czech
+        cs: cs
+        # Danish
+        da: da
+        # Dutch
+        nl: nl
+        # English, Australia
+        en-AU: en-rAU
+        # English, Canada
+        en-CA: en-rCA
+        # English, India
+        en-IN: en-rIN
+        # English, United Kingdom
+        en-GB: en-rGB
+        # Esperanto
+        eo: eo
+        # Estonian
+        et: et
+        # Filipino
+        fil: fil
+        # Finnish
+        fi: fi
+        # French
+        fr: fr
+        # French, Canada
+        fr-CA: fr-rCA
+        # Frisian
+        fy-NL: fy-rNL
+        # Galician
+        gl: gl
+        # Georgian
+        ka: ka
+        # German
+        de: de
+        # Greek
+        el: el
+        # Gujarati
+        gu-IN: gu
+        # Hebrew
+        he: iw
+        # Hindi
+        hi: hi
+        # Hungarian
+        hu: hu
+        # Icelandic
+        is: is
+        # Indonesian
+        id: in
+        # Irish
+        ga-IE: ga-rIE
+        # Italian
+        it: it
+        # Japanese
+        ja: ja
+        # Kabyle
+        kab: kab-rDZ
+        # Kannada
+        kn: kn
+        # Kashubian
+        csb: csb
+        # Kazakh
+        kk: kk
+        # Khmer
+        km: km
+        # Korean
+        ko: ko
+        # Kurdish
+        ku: ku
+        # Kyrgyz
+        ky: ky
+        # Lao
+        lo: lo
+        # Latvian
+        lv: lv
+        # Lithuanian
+        lt: lt
+        # Luxembourgish
+        lb: lb
+        # Macedonian (FYROM)
+        mk: mk
+        # Malay
+        ms: ms
+        # Malayalam
+        ml-IN: ml
+        # Marathi
+        mr: mr
+        # Mongolian
+        mn: mn
+        # Nepali
+        ne-NP: ne
+        # Norwegian Bokmal
+        nb: nb
+        # Occitan
+        oc: oc
+        # Oriya
+        or: or
+        # Persian
+        fa: fa
+        # Pirate English
+        en-PT: en-rPT
+        # Polish
+        pl: pl
+        # Portuguese
+        pt-PT: pt-rPT
+        # Portuguese, Brazilian
+        pt-BR: pt-rBR
+        # Punjabi
+        pa-IN: pa
+        # Romanian
+        ro: ro
+        # Romansh
+        rm-CH: rm
+        # Russian
+        ru: ru
+        # Sardinian
+        sc: sc-rIT
+        # Scottish Gaelic
+        gd: gd
+        # Serbian (Cyrillic)
+        sr: sr
+        # Serbian (Latin)
+        sr-CS: b+sr+Latn
+        # Sinhala
+        si-LK: si
+        # Slovak
+        sk: sk
+        # Slovenian
+        sl: sl
+        # Spanish
+        es-ES: es
+        # Spanish, Colombia
+        es-CO: es-rCO
+        # Spanish, Mexico
+        es-MX: es-rMX
+        # Spanish, United States
+        es-US: es-rUS
+        # Sundanese
+        su: su
+        # Swahili
+        sw: sw
+        # Swedish
+        sv-SE: sv
+        # Tagalog
+        tl: tl
+        # Tamil
+        ta: ta
+        # Telugu
+        te: te
+        # Thai
+        th: th
+        # Turkish
+        tr: tr
+        # Ukrainian
+        uk: uk
+        # Urdu (Pakistan)
+        ur-PK: ur
+        # Uyghur
+        ug: ug
+        # Uzbek
+        uz: uz
+        # Venetian
+        vec: vec
+        # Vietnamese
+        vi: vi
+        # Welsh
+        cy: cy
+        # Zulu
+        zu: zu
+
+  # frameworks/base/packages/SettingsLib
+  -
+    source:      '/frameworks/base/packages/SettingsLib/res/values/custom_strings.xml'
+    translation: '/frameworks/base/packages/SettingsLib/res/values-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
+
+
+  # packages/apps/Settings
+  -
+    source:      '/packages/apps/Settings/res/values/custom_strings.xml'
+    translation: '/packages/apps/Settings/res/values-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
+
+  # packages/apps/Settings - Plurals
+  -
+    source:      '/packages/apps/Settings/res/values/custom_plurals.xml'
+    translation: '/packages/apps/Settings/res/values-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
+
+  # packages/apps/TouchGestures
+  -
+    source:      '/packages/apps/TouchGestures/res/values/custom_strings.xml'
+    translation: '/packages/apps/TouchGestures/res/values-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
+
+  # packages/apps/Updates
+  -
+    source:      '/packages/apps/Updates/res/values/custom_strings.xml'
+    translation: '/packages/apps/Updates/res/values-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
+
+  # packages/providers/DownloadProvider
+  -
+    source:      '/packages/providers/DownloadProvider/res/values/custom_strings.xml'
+    translation: '/packages/providers/DownloadProvider/res/values-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
+
+  # packages/resources/devicesettings
+  -
+    source:      '/packages/resources/devicesettings/res/values/custom_strings.xml'
+    translation: '/packages/resources/devicesettings/res/values-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
+
+  

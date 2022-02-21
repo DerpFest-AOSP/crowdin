@@ -570,7 +570,7 @@ def main():
         print(f'{base_path_env} is not a real directory: {base_path}')
         sys.exit(1)
 
-    xml_main = load_xml(x=f'{base_path}/manifest/snippets/pixel.xml')
+    xml_main = load_xml(x=f'{base_path}/manifest/snippets/crowdin.xml')
     if xml_main is None:
         sys.exit(1)
 

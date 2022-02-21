@@ -23,10 +23,10 @@ project_id: 296617
 preserve_hierarchy: true
 
 files:
-# frameworks/base/packages/SystemUI
+# frameworks/base/core/res
   -
-    source:      '/frameworks/base/packages/SystemUI/res/values/custom_strings.xml'
-    translation: '/frameworks/base/packages/SystemUI/res/values-%android_code%/%original_file_name%'
+    source:      '/frameworks/base/core/res/res/values/custom_strings.xml'
+    translation: '/frameworks/base/core/res/res/values-%android_code%/%original_file_name%'
     languages_mapping: &anchor
       android_code:
         # Afrikaans
@@ -240,12 +240,23 @@ files:
         # Zulu
         zu: zu
 
+  # frameworks/base/packages/SystemUI
+  -
+    source:      '/frameworks/base/packages/SystemUI/res/values/custom_strings.xml'
+    translation: '/frameworks/base/packages/SystemUI/res/values-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
+
   # frameworks/base/packages/SettingsLib
   -
     source:      '/frameworks/base/packages/SettingsLib/res/values/custom_strings.xml'
     translation: '/frameworks/base/packages/SettingsLib/res/values-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
+  # packages/apps/FaceUnlockService
+  -
+    source:      '/packages/apps/FaceUnlockService/app/src/main/res/values/custom_strings.xml'
+    translation: '/packages/apps/FaceUnlockService/app/src/main/res/values-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
 
   # packages/apps/Settings
   -

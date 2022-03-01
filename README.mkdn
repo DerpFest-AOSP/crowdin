@@ -1,3 +1,10 @@
+
+Localized
+----------
+[![Crowdin](https://badges.crowdin.net/superior-os/localized.svg)](https://crowdin.com/project/superior-os)
+
+
+
 crowdin_sync.py
 ==================
 

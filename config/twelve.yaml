@@ -19,13 +19,13 @@
 
 api_token_env: CROWDIN_API_KEY
 base_path_env: CROWDIN_BASE_PATH
-project_id: 296617
+project_id: 361367
 preserve_hierarchy: true
 
 files:
 # frameworks/base/core/res
   -
-    source:      '/frameworks/base/core/res/res/values/custom_strings.xml'
+    source:      '/frameworks/base/core/res/res/values/superior_strings.xml'
     translation: '/frameworks/base/core/res/res/values-%android_code%/%original_file_name%'
     languages_mapping: &anchor
       android_code:
@@ -242,56 +242,26 @@ files:
 
   # frameworks/base/packages/SystemUI
   -
-    source:      '/frameworks/base/packages/SystemUI/res/values/custom_strings.xml'
+    source:      '/frameworks/base/packages/SystemUI/res/values/superior_strings.xml'
     translation: '/frameworks/base/packages/SystemUI/res/values-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
   # frameworks/base/packages/SettingsLib
   -
-    source:      '/frameworks/base/packages/SettingsLib/res/values/custom_strings.xml'
+    source:      '/frameworks/base/packages/SettingsLib/res/values/superior_strings.xml'
     translation: '/frameworks/base/packages/SettingsLib/res/values-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
-  # packages/apps/FaceUnlockService
+  # packages/apps/SuperiorSettings
   -
-    source:      '/packages/apps/FaceUnlockService/app/src/main/res/values/custom_strings.xml'
-    translation: '/packages/apps/FaceUnlockService/app/src/main/res/values-%android_code%/%original_file_name%'
+    source:      '/packages/apps/SuperiorSettings/res/values/superior_strings.xml'
+    translation: '/packages/apps/SuperiorSettings/res/values-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
   # packages/apps/Settings
   -
-    source:      '/packages/apps/Settings/res/values/custom_strings.xml'
+    source:      '/packages/apps/Settings/res/values/superior_strings.xml'
     translation: '/packages/apps/Settings/res/values-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
-
-  # packages/apps/Settings - Plurals
-  -
-    source:      '/packages/apps/Settings/res/values/custom_plurals.xml'
-    translation: '/packages/apps/Settings/res/values-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
-
-  # packages/apps/TouchGestures
-  -
-    source:      '/packages/apps/TouchGestures/res/values/custom_strings.xml'
-    translation: '/packages/apps/TouchGestures/res/values-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
-
-  # packages/apps/Updates
-  -
-    source:      '/packages/apps/Updates/res/values/custom_strings.xml'
-    translation: '/packages/apps/Updates/res/values-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
-
-  # packages/providers/DownloadProvider
-  -
-    source:      '/packages/providers/DownloadProvider/res/values/custom_strings.xml'
-    translation: '/packages/providers/DownloadProvider/res/values-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
-
-  # packages/resources/devicesettings
-  -
-    source:      '/packages/resources/devicesettings/res/values/custom_strings.xml'
-    translation: '/packages/resources/devicesettings/res/values-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
   

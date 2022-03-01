@@ -279,7 +279,7 @@ def push_as_commit(config_files, base_path, path, name, branch, username):
 
     # Push commit
     try:
-        repo.git.push(f'ssh://{username}@gerrit.pixelexperience.org:29418/{name}',
+        repo.git.push(f'ssh://{username}@review.superioros.org:29400/{name}',
                       f'HEAD:refs/for/{branch}%topic=translation')
         print('Success')
     except Exception as e:
@@ -296,8 +296,8 @@ def submit_gerrit(branch, username, owner):
         ownerArg = f'owner:{owner}'
 
     # Find all open translation changes
-    cmd = ['ssh', '-p', '29418',
-        f'{username}@gerrit.pixelexperience.org',
+    cmd = ['ssh', '-p', '29400',
+        f'{username}@review.superioros.org',
         'gerrit', 'query',
         'status:open',
         f'branch:{branch}',
@@ -319,8 +319,8 @@ def submit_gerrit(branch, username, owner):
         if not 'currentPatchSet' in js or not 'revision' in js['currentPatchSet']:
             continue
         # Add Code-Review +2 and Verified+1 labels and submit
-        cmd = ['ssh', '-p', '29418',
-        f'{username}@gerrit.pixelexperience.org',
+        cmd = ['ssh', '-p', '29400',
+        f'{username}@review.superioros.org',
         'gerrit', 'review',
         '--verified +1',
         '--code-review +2',

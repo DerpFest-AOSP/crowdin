@@ -252,6 +252,12 @@ files:
     translation: '/frameworks/base/packages/SettingsLib/res/values-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
+  # packages/apps/Launcher3
+  -
+    source:      '/packages/apps/Launcher3/res/values/superior_strings.xml'
+    translation: '/packages/apps/Launcher3/res/values-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
+
   # packages/apps/SuperiorSettings
   -
     source:      '/packages/apps/SuperiorSettings/res/values/superior_strings.xml'
@@ -264,4 +270,9 @@ files:
     translation: '/packages/apps/Settings/res/values-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
+  # packages/apps/Updater
+  -
+    source:      '/packages/apps/Updater/res/values/superior_strings.xml'
+    translation: '/packages/apps/Updater/res/values-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
   

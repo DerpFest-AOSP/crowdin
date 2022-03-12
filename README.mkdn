@@ -21,6 +21,10 @@ Install requirements using:
 
 pip install -r requirements.txt
 
+Setup translation source:
+
+    repo init -u https://github.com/SuperiorOS/manifest -b twelve -m crowdin.xml --depth=1
+
 Executing
 ---------
 Export the following environment variables to set the API keys and the base path.

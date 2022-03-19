@@ -19,13 +19,13 @@
 
 api_token_env: CROWDIN_API_KEY
 base_path_env: CROWDIN_BASE_PATH
-project_id: 361367
+project_id: 338113
 preserve_hierarchy: true
 
 files:
 # frameworks/base/core/res
   -
-    source:      '/frameworks/base/core/res/res/values/superior_strings.xml'
+    source:      '/frameworks/base/core/res/res/values/pixys_strings.xml'
     translation: '/frameworks/base/core/res/res/values-%android_code%/%original_file_name%'
     languages_mapping: &anchor
       android_code:
@@ -242,37 +242,12 @@ files:
 
   # frameworks/base/packages/SystemUI
   -
-    source:      '/frameworks/base/packages/SystemUI/res/values/superior_strings.xml'
+    source:      '/frameworks/base/packages/SystemUI/res/values/pixys_strings.xml'
     translation: '/frameworks/base/packages/SystemUI/res/values-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
   # frameworks/base/packages/SettingsLib
   -
-    source:      '/frameworks/base/packages/SettingsLib/res/values/superior_strings.xml'
+    source:      '/frameworks/base/packages/SettingsLib/res/values/pixys_strings.xml'
     translation: '/frameworks/base/packages/SettingsLib/res/values-%android_code%/%original_file_name%'
     languages_mapping: *anchor
-
-  # packages/apps/Launcher3
-  -
-    source:      '/packages/apps/Launcher3/res/values/superior_strings.xml'
-    translation: '/packages/apps/Launcher3/res/values-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
-
-  # packages/apps/SuperiorSettings
-  -
-    source:      '/packages/apps/SuperiorSettings/res/values/superior_strings.xml'
-    translation: '/packages/apps/SuperiorSettings/res/values-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
-
-  # packages/apps/Settings
-  -
-    source:      '/packages/apps/Settings/res/values/superior_strings.xml'
-    translation: '/packages/apps/Settings/res/values-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
-
-  # packages/apps/Updater
-  -
-    source:      '/packages/apps/Updater/res/values/superior_strings.xml'
-    translation: '/packages/apps/Updater/res/values-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
-  

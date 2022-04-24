@@ -246,8 +246,20 @@ files:
     translation: '/frameworks/base/packages/SystemUI/res/values-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
-  # frameworks/base/packages/SettingsLib
+  # frameworks/base/packages/PackageInstaller
   -
-    source:      '/frameworks/base/packages/SettingsLib/res/values/pixys_strings.xml'
-    translation: '/frameworks/base/packages/SettingsLib/res/values-%android_code%/%original_file_name%'
+    source:      '/frameworks/base/packages/PackageInstaller/res/values/pixys_strings.xml'
+    translation: '/frameworks/base/packages/PackageInstaller/res/values-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
+
+  # packages/apps/Launcher3
+  -
+    source:      '/packages/apps/Launcher3/res/values/pixys_strings.xml'
+    translation: '/packages/apps/Launcher3/res/values-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
+
+  # packages/apps/Settings
+  -
+    source:      '/packages/apps/Settings/res/values/pixys_strings.xml'
+    translation: '/packages/apps/Settings/res/values-%android_code%/%original_file_name%'
     languages_mapping: *anchor

@@ -1,0 +1,45 @@
+# Basic workflow for Crowdin GitHub Action
+
+name: Crowdin
+
+# Allows you to run this workflow periodically according to your schedule
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: '0 0 * * SUN'
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      # Setup Java
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          java-version: 17
+          distribution: 'zulu'
+
+      # Setup Crowdin
+      - name: Setup Crowdin
+        run: sudo -E bash .github/scripts/setup-crowdin.sh
+
+        # Push translations
+      - name: Push
+        run: sudo -E bash .github/scripts/push-crowdin.sh
+        env:
+          CROWDIN_API_KEY: ${{ secrets.CROWDIN_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

@@ -252,14 +252,26 @@ files:
     translation: '/frameworks/base/packages/PackageInstaller/res/values-%android_code%/%original_file_name%'
     languages_mapping: *anchor
 
-  # packages/apps/Launcher3
-  -
-    source:      '/packages/apps/Launcher3/res/values/pixys_strings.xml'
-    translation: '/packages/apps/Launcher3/res/values-%android_code%/%original_file_name%'
-    languages_mapping: *anchor
-
   # packages/apps/Settings
   -
     source:      '/packages/apps/Settings/res/values/pixys_strings.xml'
     translation: '/packages/apps/Settings/res/values-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
+
+  # packages/apps/Gamespace
+  -
+    source:      '/packages/apps/GameSpace/app/src/main/res/values/strings.xml'
+    translation: '/packages/apps/GameSpace/app/src/main/res/values-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
+
+  # packages/apps/TouchGestures
+  -
+    source:      '/packages/apps/TouchGestures/res/values/custom_strings.xml'
+    translation: '/packages/apps/TouchGestures/res/values-%android_code%/%original_file_name%'
+    languages_mapping: *anchor
+
+  # packages/resources/devicesettings
+  -
+    source:      '/packages/resources/devicesettings/res/values/custom_strings.xml'
+    translation: '/packages/resources/devicesettings/res/values-%android_code%/%original_file_name%'
     languages_mapping: *anchor

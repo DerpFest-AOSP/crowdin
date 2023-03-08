@@ -1,7 +1,7 @@
 
 Localized
 ----------
-[![Crowdin](https://badges.crowdin.net/pixysos/localized.svg)](https://crowdin.com/project/pixysos)
+[![Crowdin](https://badges.crowdin.net/derpfest-aosp/localized.svg)](https://crowdin.com/project/derpfest-aosp)
 
 
 crowdin_sync.py
@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 Setup translation source:
 
-    repo init -u https://github.com/PixysOS/manifest -b thirteen -m crowdin.xml --depth=1
+    repo init -u https://github.com/derpfest-aosp/manifest -b 13 -m crowdin.xml --depth=1
 
 Executing
 ---------

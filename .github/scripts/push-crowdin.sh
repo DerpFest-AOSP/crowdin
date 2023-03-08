@@ -1,6 +1,6 @@
           mkdir pixys
           cd pixys
-          repo init -u https://github.com/glikched/manifest -b 13 -m crowdin.xml --depth=1
+          repo init -u https://github.com/glikched/manifest -b glikched-test -m crowdin.xml --depth=1
           repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
           wait
           cd crowdin

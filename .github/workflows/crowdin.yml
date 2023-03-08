@@ -6,7 +6,7 @@ name: Crowdin
 on:
   push:
     branches:
-      - master
+      - test-workflow
   schedule:
     - cron: '0 0 * * SUN'
 
